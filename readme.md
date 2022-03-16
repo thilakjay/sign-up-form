@@ -1,0 +1,1 @@
+This is a sign-up form project for applying intermediate HTML & CSS knowledge.
