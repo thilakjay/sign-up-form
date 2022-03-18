@@ -11,8 +11,9 @@
     <div id="left-side">
         <img id="odin-background" src="/odin.jpg" alt="Background image of Odin statue">
         <div id="banner">
-            <img id="odin-logo" src="/odin-lined.png" alt="Odin Logo"><span>Odin</span>
+            <img id="banner-logo" src="/odin-lined.png" alt="Odin Logo"><span class="banner-title">Odin</span>
         </div>
+        <p class="photocredit">Photo by <a href="https://unsplash.com/@aarsoph" alt="Photographer's Portfolio Link">Kristijan Arsov</a> on <a href="https://unsplash.com/" alt="Unsplash Website Link">Unsplash</a></p>
     </div>
 
     <div id="right-side">
@@ -31,7 +32,7 @@
                 <div class="form-row">
                     <div class="item">
                         <label for="firstname">FIRST NAME</label>
-                        <input type="text" id="firstname" name="firstname">
+                        <input type="text" id="firstname" name="firstname" required>
                     </div>
 
                     <div class="item">
@@ -43,24 +44,26 @@
                 <div class="form-row">
                     <div class="item">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </div>
 
                     <div class="item">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]*">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="item">
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <input class="error" type="password" id="password" name="password" required>
+                        <span class="errormessage"></span>
                     </div>
                     
                     <div class="item">
                         <label for="password2">CONFIRM PASSWORD</label>
-                        <input type="password" id="password2" name="password2">
+                        <input type="password" class="error" id="password2" name="password2" required>
+                        
                     </div>
                 </div>
 
@@ -68,7 +71,7 @@
                     <button>Create Account</button>
                 </div>
 
-                <p>Already have an account? <a href="">Log in</a></p>
+                <p>Already have an account? <a class="login" href="">Log in</a></p>
             </form>
         </div>
     </div>
